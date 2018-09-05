@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+IFS=',' builtin read -r -a array <<< "$1"
+builtin shopt -s lastpipe
+for (( i=0 ; i<${#array[@]} ; i++ )) ; do
+    builtin printf "${array[$i]}" | builtin read v
+    array[$i]="$v"
+
+    # For debugging
+    #echo ">>${array[$i]}<<"
+
+done
+builtin shopt -u lastpipe
+
+# For debugging
+#for i in "${array[@]}" ; do
+#    builtin printf '>>%s<<\n' "$i"
+#done
+#echo "${array[@]}"
+
+"${array[@]}"
+

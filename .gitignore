@@ -1,0 +1,27 @@
+# Third-party modules I have installed
+
+Modules/AWSPowerShell
+Modules/Configuration
+Modules/GitAutomation
+Modules/GuiCompletion
+Modules/LibGit2
+Modules/MadMultithreading
+Modules/Microsoft.Net.Compilers
+Modules/PackageManagement
+Modules/Pansies
+Modules/Pester
+Modules/posh-git
+Modules/Posh-SSH
+Modules/PowerLine
+Modules/PowerShellGet
+Modules/Pscx
+Modules/PSGit
+Modules/PSJira
+Modules/PSLiteDB
+Modules/PSReadLine
+Modules/PSSwagger
+Modules/PSSwaggerUtility
+Modules/ZLocation
+
+# Private gitignore file
+Modules/.gitignore
